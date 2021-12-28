@@ -1,8 +1,15 @@
 
 
+``` zig
+const std = @import("std");
 
-👋 Hello Stalkers.......
-How Are You ??
+pub fn main() !void {
+	const stdout = std.io.getStdOut().writer();
+	try stdout.print("👋 Hello Stalkers....")
+}
+```
+
+
 
 
 
