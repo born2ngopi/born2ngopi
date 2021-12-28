@@ -1,16 +1,16 @@
 
 
 ``` rust
-struct Myself {
+struct Introduct {
     name: String,
     from: String,
     languages: [String; 2],
     languages_technology: [String; 5],
 }
 
-impl Myself {
-    fn introduct() -> Myself {
-        Myself{
+impl Introduct {
+    fn myself() -> Introduct {
+        Introduct{
             name: "Chandra Agung Rizky".to_string(),
             from: "Yogyakarta, Indonesia".to_string(),
             languages: [
@@ -24,16 +24,16 @@ impl Myself {
                 "Javascript".to_string(),
                 "Ruby".to_string(),
             ],
-        };
+        }
     }
 }
 
 fn main(){
     println!("👋 Hello Stalkers......");
     
-    let me = Myself{};
-    me.introduct();
+    Introduct::myself();
 }
+
 ```
 
 
