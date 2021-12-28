@@ -1,25 +1,35 @@
 
 
-``` zig
-const print = @import("std").debug.print;
+``` rust
+struct Myself {
+    name: String,
+    from: String,
+	languages: [String; 2],
+    languages_technology: [String; 5],
+}
 
-const Myself = struct{
-	name: [19:0]u8,
-	from: [10:0]u8,
-};
-
-pub fn main() !void {
-
-	print("👋 Hello Stalkers....",.{});
-
-	const introduct = Myself{
-		.name = "chandra agung rizky".*,
-		.from = "yogyakarta".*,
-	};
-
-	_ = introduct;
+fn main(){
+    println!("👋 Hello Stalkers......");
+    
+    let introduct = Myself{
+        name: "Chandra Agung Rizky".to_string(),
+        from: "Yogyakarta, Indonesia".to_string(),
+        languages: [
+            "Indonesia".to_string(),
+            "English".to_string(),
+        ],
+        languages_technology: [
+            "Golang".to_string(),
+            "Rust".to_string(),
+            "Php".to_string(),
+            "Javascript".to_string(),
+            "Ruby".to_string(),
+        ],
+    };   
 }
 ```
+
+
 
 
 
