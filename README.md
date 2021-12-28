@@ -2,10 +2,10 @@
 
 ``` rust
 struct Myself {
-    name: String,
-    from: String,
+	name: String,
+	from: String,
 	languages: [String; 2],
-    languages_technology: [String; 5],
+	languages_technology: [String; 5],
 }
 
 fn main(){
