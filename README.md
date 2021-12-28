@@ -1,11 +1,23 @@
 
 
 ``` zig
-const std = @import("std");
+const print = @import("std").debug.print;
+
+const Myself = struct{
+	name: [19:0]u8,
+	from: [10:0]u8,
+};
 
 pub fn main() !void {
-	const stdout = std.io.getStdOut().writer();
-	try stdout.print("👋 Hello Stalkers....")
+
+	print("👋 Hello Stalkers....",.{});
+
+	const introduct = Myself{
+		.name = "chandra agung rizky".*,
+		.from = "yogyakarta".*,
+	};
+
+	_ = introduct;
 }
 ```
 
